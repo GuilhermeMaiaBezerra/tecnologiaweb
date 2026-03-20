@@ -4,21 +4,30 @@ body{
     background:#f5f5f5;
 }
 
-header{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:40px 20px;
+.navbar {
+    display: flex;
+    justify-content: flex-end;          
+    padding: 20px 5%;
+    background-color: #111;
+    color: white;
 }
 
-header h1{
-    margin:0;
-    font-size:32px;
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
 }
 
-header p{
-    margin-top:10px;
-    color:#ccc;
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
 }
 
 .container{
@@ -27,8 +36,24 @@ header p{
     padding:30px;
 }
 
-.sobre{
-    margin-bottom:40px;
+.sobre {
+    display: flex;       
+    align-items: center; 
+    gap: 40px;           
+    margin-bottom: 40px;
+    max-width: 900px;    
+}
+
+.sobre img {
+    width: 300px;        
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover; 
+    border: 5px solid #1a1a1a;
+}
+
+.sobre-texto {
+    flex: 1;            
 }
 
 .projetos{
@@ -37,8 +62,6 @@ header p{
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
-
-
 
 .card{
     background:white;
@@ -101,3 +124,52 @@ footer{
     font-weight: bold;
 }
 
+.formulario {
+    text-align: center; 
+    padding: 20px;
+}
+
+.formulario input {
+    display: block;     
+    width: 300px;
+    margin: 0 auto 15px; 
+    padding: 20px;     
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.formulario textarea{
+
+    display: block;     
+    width: 300px;
+    margin: 0 auto 15px; 
+    padding: 20px;     
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.btn-enviar{
+
+    display: block;     
+    width: 300px;
+    margin: 0 auto 15px; 
+    padding: 20px;     
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    background-color: #111;
+    cursor: hand;
+}
+
+.btn-enviar a{
+
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-enviar:hover{
+
+    background-color: #00bcd4;
+}
