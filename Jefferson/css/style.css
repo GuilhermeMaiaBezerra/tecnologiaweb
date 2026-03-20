@@ -1,0 +1,278 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+/* VARIÁVEIS */
+
+:root{
+    --primary-color:#0f172a;
+    --secondary-color:#3b82f6;
+    --text-color:#ffffff;
+
+    --font-size:18px;
+
+    --spacing-xs:8px;
+    --spacing-sm:16px;
+    --spacing-md:30px;
+    --spacing-lg:60px;
+}
+
+/* BODY */
+
+body{
+    background:#f1f5f9;
+    line-height:1.6;
+}
+
+/* TITULOS */
+
+h1,h2,h3{
+    margin-bottom:var(--spacing-sm);
+}
+
+h2{
+    border-bottom:2px solid var(--secondary-color);
+    padding-bottom:6px;
+}
+
+/* HEADER */
+
+header{
+    background:var(--primary-color);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:var(--spacing-sm) var(--spacing-md);
+}
+
+.container-header{
+    display:flex;
+    align-items:center;
+    gap:var(--spacing-sm);
+}
+
+.container-header img{
+    width:80px;
+    border-radius:50%;
+    border:3px solid var(--secondary-color);
+}
+
+header span{
+    color:var(--text-color);
+    font-weight:500;
+    font-size:20px;
+    transition:0.3s;
+}
+
+header span:hover{
+    color:var(--secondary-color);
+}
+
+/* NAVBAR */
+
+.ul-nav{
+    display:flex;
+    gap:40px;
+}
+
+.ul-nav li{
+    list-style:none;
+    color:var(--text-color);
+    transition:0.3s;
+}
+
+.ul-nav li:hover{
+    transform:translateY(-4px);
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+a:hover{
+    color:var(--secondary-color);
+}
+
+/* MAIN */
+
+main{
+    padding:var(--spacing-md);
+}
+
+/* SEÇÕES */
+
+section{
+    margin-top:var(--spacing-lg);
+}
+
+/* SOBRE MIM */
+
+.sobre-mim{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:var(--spacing-md);
+
+    padding:var(--spacing-lg);
+
+    min-height:420px;
+
+    background:var(--primary-color);
+    color:var(--text-color);
+
+    border-radius:12px;
+    border:3px solid var(--secondary-color);
+}
+
+.sobre-mim-texto{
+    max-width:600px;
+}
+
+.sobre-mim-texto h1,
+.sobre-mim-texto h2,
+.sobre-mim-texto h3{
+    margin-bottom:var(--spacing-sm);
+    text-align:justify;
+}
+
+.sobre-mim-texto span{
+    color:var(--secondary-color);
+}
+
+/* IMAGEM */
+
+.container-imagem-sobre-mim{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container-imagem-sobre-mim img{
+    width:280px;
+    border-radius:50%;
+    border:3px solid var(--secondary-color);
+    transition:0.3s;
+}
+
+.container-imagem-sobre-mim img:hover{
+    transform:translateY(-5px);
+}
+
+/* PROJETOS */
+
+.projetos{
+    background:var(--primary-color);
+    color:var(--text-color);
+
+    padding:var(--spacing-lg);
+
+    border-radius:12px;
+    border:3px solid var(--secondary-color);
+}
+
+.titulo-projetos{
+    margin-bottom:var(--spacing-md);
+}
+
+.titulo-projetos h2{
+    text-align:center;
+    font-size:28px;
+}
+
+/* CONTAINER DE CARDS */
+
+.container-projetos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+    gap:var(--spacing-md);
+}
+
+/* CARDS */
+
+.card-projetos{
+    background:var(--secondary-color);
+
+    padding:var(--spacing-md);
+
+    border-radius:12px;
+
+    max-width:420px;
+    min-height:200px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    transition:0.3s;
+
+    box-shadow:0 8px 18px rgba(0,0,0,0.25);
+}
+
+.card-projetos:hover{
+    transform:translateY(-8px);
+}
+
+.card-projetos h3{
+    text-align:center;
+    color:var(--primary-color);
+    font-weight:600;
+}
+
+.card-projetos p{
+    text-align:justify;
+}
+
+.desenvolvido{
+    color:var(--primary-color);
+    font-weight:600;
+}
+
+/* HARD SKILLS */
+
+.hard-skills{
+    margin-top:var(--spacing-lg);
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width:900px){
+
+.sobre-mim{
+    flex-direction:column;
+    text-align:center;
+}
+
+.container-imagem-sobre-mim img{
+    width:200px;
+}
+
+.ul-nav{
+    gap:20px;
+}
+
+.container-projetos{
+    flex-direction:column;
+    align-items:center;
+}
+
+.rodape{
+    background:var(--primary-color);
+    color:var(--text-color);
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:60px;
+
+    border-top:3px solid var(--secondary-color);
+}
+
+}
